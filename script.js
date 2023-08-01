@@ -20,20 +20,6 @@ const downloadImg = (imgUrl) => {
     }).catch(() => alert("Failed to download image!"));
 }
 
-const showLightbox = (name, img) => {
-  
-    lightbox.querySelector("img").src = img;
-    lightbox.querySelector("span").innerText = name;
-    downloadImgBtn.setAttribute("data-img", img);
-    lightbox.classList.add("show");
-    document.body.style.overflow = "hidden";
-}
-
-const hideLightbox = () => {
-   
-    lightbox.classList.remove("show");
-    document.body.style.overflow = "auto";
-}
 
 const generateHTML = (images) => {
     
